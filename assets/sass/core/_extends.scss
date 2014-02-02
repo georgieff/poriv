@@ -1,0 +1,45 @@
+%bs-border-box {
+  @include box-sizing("border-box");
+  @include ie7 {
+    behavior: url("../htc/boxsizing.htc");
+  }
+}
+
+%bs-cover {
+  background: {
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center center;
+  }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+%mcf, .mcf {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%list-reset, .list-reset {
+  margin: 0;
+  list-style: none;
+  li {
+    padding: 0;
+    background-image: none;
+  }
+}
+
+%list-no-bullets, .list-no-bullets {
+  margin-left: 0;
+  list-style: none;
+  > li {
+    padding: 0;
+    background-image: none;
+  }
+}

@@ -1,0 +1,13 @@
+$section-padding: 100px;
+$bg-section-height: 600px;
+
+.Section {
+  @extend %bs-border-box;
+  @extend %bs-cover;
+  padding: $section-padding 0;
+}
+
+.Section-light {
+  background: #f8f8f8;
+}
+

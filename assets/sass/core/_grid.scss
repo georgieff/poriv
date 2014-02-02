@@ -1,0 +1,117 @@
+// Grid settings
+// --------------------------------------------------
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
+// Media queries breakpoints
+// --------------------------------------------------
+$screen-small: 300px + $grid-gutter-width;
+$screen-normal: 560px + $grid-gutter-width;
+$screen-max: 960px + $grid-gutter-width;
+
+// Common grid mixins
+// --------------------------------------------------
+@mixin grid-cont {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+  @extend %mcf;
+}
+
+@mixin grid-row($gutter: $grid-gutter-width) {
+  margin-left: $gutter / -2;
+  margin-right: $gutter / -2;
+  font-size: 0;
+  @extend %mcf;
+}
+
+@mixin generate-grid-cols($class) {
+  @for $i from 1 through $grid-columns {
+    #{$class}#{$i} {
+      @extend %col-common;
+      width: percentage($i / $grid-columns);
+    }
+  }
+  // offsets
+  @for $i from 1 through $grid-columns {
+    #{$class}-offset#{$i} {
+      margin-left: percentage($i / $grid-columns);
+    }
+  }
+}
+
+// Generate grid system
+// --------------------------------------------------
+.cont {
+  max-width: $screen-max;
+  width: auto;
+
+  @include grid-cont;
+  @include ie-oldie {
+    min-width: $screen-normal;
+  }
+}
+
+.row {
+  @include grid-row;
+}
+
+%col-common {
+  position: relative;
+  display: inline-block;
+  min-height: 1px;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+  font-size: $base-font-size;
+  vertical-align: top;
+
+  @extend %bs-border-box;
+  @include ie7 {
+    display: inline;
+    zoom: 1;
+  }
+}
+
+@include generate-grid-cols(".col");
+
+// @media (max-width: $screen-normal) {
+//   @for $i from 1 through $grid-columns {
+//     #{col}-#{$i} {
+//       margin-bottom: 4%;
+//     }
+//   }
+//   .col-1 {
+//     width: percentage(2 / $grid-columns);
+//   }
+//   .col--offset-1 {
+//     margin-left: percentage(2 / $grid-columns);
+//   }
+//   .col-2,
+//   .col-3 {
+//     width: percentage(4 / $grid-columns);
+//   }
+//   .col--offset-2,
+//   .col--offset-3 {
+//     margin-left: percentage(4 / $grid-columns);
+//   }
+//   .col-9,
+//   .col-10 {
+//     width: percentage(8 / $grid-columns);
+//   }
+//   .col--offset-9 {}
+//   .col--offset-10 {
+//     width: percentage(8 / $grid-columns);
+//   }
+// }
+
+// @media (max-width: $screen-small) {
+//   @for $i from 1 through $grid-columns {
+//     .col-#{$i} {
+//       width: 100%;
+//     }
+//     .col--offset-#{$i} {
+//       margin-left: 0;
+//     }
+//   }
+// }

@@ -1,0 +1,46 @@
+#mod {
+
+  .mtac {
+    text-align: center;
+  }
+
+  .mtal {
+    text-align: left;
+  }
+
+  .mtar {
+    text-align: right;
+  }
+
+  .mnp {
+    padding: 0;
+  }
+
+  .mnm {
+    margin: 0;
+  }
+
+  .mdb {
+    display: block;
+  }
+
+  .mdib {
+    display: inline-block;
+  }
+
+  .mdi {
+    display: inline;
+  }
+
+  @for $i from 1 through 5 {
+    .mmb#{$i} {
+      margin-bottom: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 5 {
+    .mpb#{$i} {
+      padding-bottom: 10px*$i;
+    }
+  }
+}

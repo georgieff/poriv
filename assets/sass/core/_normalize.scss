@@ -1,0 +1,248 @@
+html, body {
+  height: 100%;
+}
+
+*, *:before, *:after {
+  @extend %bs-border-box;
+}
+
+// Prevent iOS text size adjust after orientation change, without disabling user zoom
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: $base-color;
+  background: $base-background-color;
+  font: 400 #{$base-font-size}/1.25 $base-font-family;
+}
+
+// Correct 'block' display not defined in IE 8/9.
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+blockquote {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+// all sort of content links
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+
+  img {
+    transition: opacity 0.3s ease;
+    -webkit-transform: translateZ(0);
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+    img {
+      opacity: 0.85;
+    }
+  }
+
+  &:focus {
+    outline: thin dotted #333333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+
+// common elements
+b, strong {
+  font-weight: 700;
+}
+
+small {
+  display: inline-block;
+  font-size: 85%;
+  line-height: 1.2;
+}
+
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+hr {
+  clear: both;
+  height: 0;
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+}
+
+p, ul, ol, dl, form, fieldset, small {
+  margin: 8px 0 20px;
+  padding: 0;
+  font-size: 20px;
+  font-weight:300;
+}
+
+ul, ol {
+  list-style-position: outside;
+  margin-left: 20px;
+}
+
+dl {
+  @extend %mcf;
+}
+
+dt, dd {
+  float: left;
+  clear: both;
+}
+
+dd {
+  clear: none;
+  margin-left: 10px;
+}
+
+// headings
+h1, .h1 {
+  margin: 0 0 40px;
+  font: 500 24px $font-family-1;
+}
+
+h2, .h2 {
+  margin: 10px 0 40px;
+  font: 500 36px / 0.91 $font-family-1;
+}
+
+.inline-header{
+  margin-left:40px;
+}
+
+h3, .h3 {
+  margin: 0 0 20px;
+  font: 300 24px / 1.2 $font-family-1;
+}
+
+h4, .h4 {
+  margin: 0 0 20px;
+  font: 300 24px $font-family-1;
+}
+
+h5, .h5 {
+  margin: 0 0 10px;
+  font: 500 16px $font-family-1;
+}
+
+h6, .h6 {
+  margin: 0 0 10px;
+  font: 700 14px / 2 $font-family-1;
+  text-transform: uppercase;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+td, th {
+  text-align: left;
+  vertical-align: top;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  line-height: inherit;
+  font-family: inherit;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  border: none;
+
+  @include ie7 {
+    overflow: visible;
+  }
+}
+
+input[disabled],
+button[disabled] {
+  cursor: default;
+  opacity: 0.75;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+
+  @extend %bs-border-box;
+  padding: 0;
+  line-height: normal;
+
+  &:focus {
+    outline: thin dotted #333333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}

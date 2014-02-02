@@ -1,0 +1,36 @@
+// Mixins for ie specific rules
+
+@mixin ie-oldie {
+  .oldie & {
+    @content;
+  }
+}
+
+@mixin ie7 {
+  .ie7 & {
+    @content;
+  }
+}
+
+@mixin ie8 {
+  .ie8 & {
+    @content;
+  }
+}
+
+@mixin ie9 {
+  .ie9 & {
+    @content;
+  }
+}
+
+@mixin font-face($font-family) {
+  @font-face {
+    font-family: $font-family;
+    src: url("../fonts/#{$font-family}.eot");
+    src: url("../fonts/#{$font-family}.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/#{$font-family}.woff") format("woff"),
+    url("../fonts/#{$font-family}.ttf") format("truetype"),
+    url("../fonts/#{$font-family}.svg##{$font-family}") format("svg");
+  }
+}
