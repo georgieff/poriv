@@ -1,13 +1,49 @@
-$section-padding: 100px;
+$section-padding-super-large: 85px;
+$section-padding: 50px;
+$section-padding-large: 60px;
+$section-padding-small: 35px;
 $bg-section-height: 600px;
 
 .Section {
-  @extend %bs-border-box;
-  @extend %bs-cover;
   padding: $section-padding 0;
 }
 
-.Section-light {
-  background: #f8f8f8;
+.Section-big {
+  padding: $section-padding-super-large 0;
+}
+
+.Section-black {
+  padding: $section-padding-small 0;
+  background: #000;
+  color: #fff;
+}
+
+.Section-nav {
+  @extend .Section-black;
+  padding: 0;
+
+  .logo {
+    padding: 15px 0;
+  }
+}
+
+.Section-grey {
+  padding: $section-padding-large 0;
+  background: #e3e0e0;
+}
+
+.Section-header {
+  padding: 40px 0;
+  background: #39c9ce;
+  color: #fff;
+}
+
+.Section-eu {
+  padding: 15px 0;
+
+  span {
+    font-size: 11px;
+    text-transform: uppercase;
+  }
 }
 

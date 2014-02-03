@@ -1,22 +1,12 @@
 *, *:before, *:after, input[type="radio"],
-input[type="checkbox"], .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .Section {
+input[type="checkbox"], .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .ie7 *, .ie7 *:before, .ie7 *:after, .ie7 input[type="radio"],
-.ie7 input[type="checkbox"], .ie7 .col1, .ie7 .col2, .ie7 .col3, .ie7 .col4, .ie7 .col5, .ie7 .col6, .ie7 .col7, .ie7 .col8, .ie7 .col9, .ie7 .col10, .ie7 .col11, .ie7 .col12, .ie7 .Section {
+.ie7 input[type="checkbox"], .ie7 .col1, .ie7 .col2, .ie7 .col3, .ie7 .col4, .ie7 .col5, .ie7 .col6, .ie7 .col7, .ie7 .col8, .ie7 .col9, .ie7 .col10, .ie7 .col11, .ie7 .col12 {
   behavior: url("../htc/boxsizing.htc");
-}
-
-.Section {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 dl, .cont, .row, .mcf {
@@ -59,7 +49,7 @@ html {
 body {
   margin: 0;
   color: #555555;
-  background: #efefef;
+  background: white;
   font: 400 15px/1.25 Arial, Helvetica, sans-serif;
 }
 
@@ -173,11 +163,13 @@ dd {
 
 h1, .h1 {
   margin: 0 0 25px;
-  font: 300 48px "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
+  font: 300 48px/1 "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
 }
 h1.large, .h1.large {
   margin: 0 0 170px;
   font-size: 66px;
+  line-height: 0.9em;
+  color: #000;
 }
 
 h2, .h2 {
@@ -188,7 +180,7 @@ h2, .h2 {
 h3, .h3 {
   margin: 0 0 20px;
   font: 300 28px/1.2 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
-  color: black;
+  color: #000;
 }
 
 h4, .h4 {
@@ -198,12 +190,12 @@ h4, .h4 {
 
 h5, .h5 {
   margin: 0 0 30px;
-  font: 500 18px "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
+  font: 700 17px "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 h6, .h6 {
   margin: 0 0 20px;
-  font: 700 18px/1 "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
+  font: 700 18px/1 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -406,11 +398,70 @@ textarea {
 }
 
 .Section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
-.Section-light {
-  background: #f8f8f8;
+.Section-big {
+  padding: 85px 0;
+}
+
+.Section-black, .Section-nav {
+  padding: 35px 0;
+  background: #000;
+  color: #fff;
+}
+
+.Section-nav {
+  padding: 0;
+}
+.Section-nav .logo {
+  padding: 15px 0;
+}
+
+.Section-grey {
+  padding: 60px 0;
+  background: #e3e0e0;
+}
+
+.Section-header {
+  padding: 40px 0;
+  background: #39c9ce;
+  color: #fff;
+}
+
+.Section-eu {
+  padding: 15px 0;
+}
+.Section-eu span {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.Nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 0;
+  list-style-type: none;
+}
+.Nav > li {
+  display: inline-block;
+  list-style-type: none;
+}
+.Nav a {
+  display: inline-block;
+  padding: 15px;
+  line-height: 18px;
+  font-size: 14px;
+  color: #999;
+}
+.Nav a.special {
+  color: #ff0000;
+}
+.Nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #mod .mtac {
@@ -436,6 +487,12 @@ textarea {
 }
 #mod .mdi {
   display: inline;
+}
+#mod .mvat {
+  vertical-align: top;
+}
+#mod .mvam {
+  vertical-align: middle;
 }
 #mod .mmb1 {
   margin-bottom: 10px;

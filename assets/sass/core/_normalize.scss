@@ -144,11 +144,13 @@ dd {
 // headings
 h1, .h1 {
   margin: 0 0 25px;
-  font: 300 48px $font-family-1;
+  font: 300 48px / 1 $font-family-1;
 
   &.large {
     margin: 0 0 170px;
-    font-size: 66px
+    font-size: 66px;
+    line-height: 0.9em;
+    color: #000;
   }
 }
 
@@ -161,7 +163,7 @@ h2, .h2 {
 h3, .h3 {
   margin: 0 0 20px;
   font: 300 28px / 1.2 $font-family-2;
-  color: #000
+  color: #000;
 }
 
 h4, .h4 {
@@ -171,12 +173,12 @@ h4, .h4 {
 
 h5, .h5 {
   margin: 0 0 30px;
-  font: 500 18px $font-family-1;
+  font: 700 17px $font-family-2;
 }
 
 h6, .h6 {
   margin: 0 0 20px;
-  font: 700 18px / 1 $font-family-1;
+  font: 700 18px / 1 $font-family-2;
   text-transform: uppercase;
 }
 
