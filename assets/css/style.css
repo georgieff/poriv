@@ -58,9 +58,9 @@ html {
 
 body {
   margin: 0;
-  color: #7a7a7a;
+  color: #555555;
   background: #efefef;
-  font: 400 18px/1.25 "Roboto", Arial, Helvetica, sans-serif;
+  font: 400 15px/1.25 Arial, Helvetica, sans-serif;
 }
 
 article,
@@ -172,37 +172,38 @@ dd {
 }
 
 h1, .h1 {
-  margin: 0 0 40px;
-  font: 500 24px "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  margin: 0 0 25px;
+  font: 300 48px "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
+}
+h1.large, .h1.large {
+  margin: 0 0 170px;
+  font-size: 66px;
 }
 
 h2, .h2 {
-  margin: 10px 0 40px;
-  font: 500 36px/0.91 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
-}
-
-.inline-header {
-  margin-left: 40px;
+  margin: 0 0 40px;
+  font: 500 36px/0.91 "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
 }
 
 h3, .h3 {
   margin: 0 0 20px;
-  font: 300 24px/1.2 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  font: 300 28px/1.2 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 h4, .h4 {
   margin: 0 0 20px;
-  font: 300 24px "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  font: 300 24px "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
 }
 
 h5, .h5 {
-  margin: 0 0 10px;
-  font: 500 16px "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  margin: 0 0 30px;
+  font: 500 18px "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
 }
 
 h6, .h6 {
-  margin: 0 0 10px;
-  font: 700 14px/2 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  margin: 0 0 20px;
+  font: 700 18px/1 "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
   text-transform: uppercase;
 }
 
@@ -300,7 +301,7 @@ textarea {
   min-height: 1px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 18px;
+  font-size: 15px;
   vertical-align: top;
 }
 .ie7 .col1, .ie7 .col2, .ie7 .col3, .ie7 .col4, .ie7 .col5, .ie7 .col6, .ie7 .col7, .ie7 .col8, .ie7 .col9, .ie7 .col10, .ie7 .col11, .ie7 .col12 {
