@@ -17,6 +17,10 @@
   background-size: cover;
 }
 
+%bs-transition {
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
 %mcf, .mcf {
   *zoom: 1;
   &:after {

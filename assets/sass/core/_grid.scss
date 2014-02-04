@@ -1,13 +1,13 @@
 // Grid settings
 // --------------------------------------------------
 $grid-columns: 12;
-$grid-gutter-width: 20px;
+$grid-gutter-width: 40px;
 
 // Media queries breakpoints
 // --------------------------------------------------
 $screen-small: 300px + $grid-gutter-width;
 $screen-normal: 560px + $grid-gutter-width;
-$screen-max: 960px + $grid-gutter-width;
+$screen-max: 980px + $grid-gutter-width;
 
 // Common grid mixins
 // --------------------------------------------------

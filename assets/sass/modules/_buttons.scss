@@ -1,0 +1,31 @@
+$button-color: #f22;
+
+.Button {
+  @extend %bs-transition;
+
+  display: inline-block;
+  padding: 0 25px 0 25px;
+  background: #f22;
+  color: #fff;
+  line-height: 47px;
+
+  &:hover {
+    background: $link-color-hover;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.Button-seeMore {
+  padding-left: 15px;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url('../img/see-more.png') no-repeat;
+  }
+}

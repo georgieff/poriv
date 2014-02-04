@@ -1,0 +1,30 @@
+.ShowAll,
+.ShowPrev,
+.ShowNext {
+  @extend %bs-transition;
+
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+
+.ShowAll {
+  background: url('../img/show-all.png') center center no-repeat;
+}
+
+.ShowPrev {
+  background: #fff url('../img/left-arrow.png') center center no-repeat;
+}
+
+.ShowNext {
+  background: #fff url('../img/right-arrow.png') center center no-repeat;
+}
+
+.ShowPrev,
+.ShowNext {
+  &:hover {
+    background-color: darken(#fff, 10%)
+  }
+}
+
