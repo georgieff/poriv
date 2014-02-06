@@ -39,7 +39,7 @@ class BD_Controllers extends KT_Controllers {
                 'en' => 'Method',
                 'bg' => 'Метод'
                 ),
-            'good-practices' => array(
+            'goodpractices' => array(
                 'en' => 'Good Practices',
                 'bg' => 'Добри Практики'
                 ),
@@ -124,6 +124,7 @@ class BD_Controllers extends KT_Controllers {
 
 $this->viewData['menu'] = $menu;
 $this->viewData['pageTitle'] = $pageTitle;
+$this->viewData['webTitle'] = $pageTitle;
 $this->viewData['footerTexts'] = $footerTexts;
 $this->viewData['overheader'] = $overheader;
 $this->viewData['gallery'] = $gallery;

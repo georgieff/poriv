@@ -16,7 +16,9 @@
     <div class="cont">
       <div class="row">
         <div class="col1 logo mtar">
-          <img src="assets/img/poriv-logo.png" alt="poriv">
+          <a href="<?=baseURL();?>">
+            <img src="<?=baseURL();?>assets/img/poriv-logo.png" alt="poriv">
+          </a>
         </div>
         <div class="col11 mtar">
           <?php $this->view->show('common/nav'); ?>
@@ -43,7 +45,7 @@
           <hr>
         </div>
         <div class="col12">
-          <h6 class="mmb1"><?= $pageTitle[$lang]; ?></h6>
+          <h6 class="mmb1"><?= $webTitle[$lang]; ?></h6>
         </div>
         <div class="col9">
           <span class="Small">

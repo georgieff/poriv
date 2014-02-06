@@ -11,7 +11,8 @@
           <div class="col12">
 
             <h1><?= $title[$lang] ?></h1>
-            <h4><?= $temptext[$lang] ?></h4>
+            <span class="SubTitle"><?= $subTitle[$lang] ?></span>
+            <?= $content[$lang] ?>
 
           </div>
         </div>

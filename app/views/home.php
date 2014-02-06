@@ -56,13 +56,13 @@
       </div>
       <div class="row">
         <div class="col4">
-          <img src="assets/img/gallery1.png" alt="">
+          <img src="<?=baseURL();?>assets/img/gallery1.png" alt="">
         </div>
         <div class="col4">
-          <img src="assets/img/gallery2.png" alt="">
+          <img src="<?=baseURL();?>assets/img/gallery2.png" alt="">
         </div>
         <div class="col4">
-          <img src="assets/img/gallery3.png" alt="">
+          <img src="<?=baseURL();?>assets/img/gallery3.png" alt="">
         </div>
       </div>
     </div>
