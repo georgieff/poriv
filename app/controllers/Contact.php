@@ -90,7 +90,7 @@ Bulgaria<br>
 
 E-mail: gimr2011@abv.bg<br>
 
-www.gimrf.ngobg.info<br><br><br><br>
+www.gimrf.ngobg.info<br><br><br>
 
 <h4> Partners</h4>
 
