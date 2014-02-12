@@ -12,6 +12,7 @@ if (!defined('BASEURL')) {
  * EXAMPLE:
  *          $config['base_url'] = 'http://www.example.com/'; <<<
  */
+$config['base_url'] = 'http://www.poriv.eu/';
 $config['base_url'] = 'http://localhost/poriv/';
 
 /* Change default_controller

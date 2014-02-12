@@ -59,6 +59,7 @@
       </div>
     </div>
   </section>
-
+  <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <?= scriptTag('assets/js/lightbox-2.6.min.js'); ?>
 </body>
 </html>

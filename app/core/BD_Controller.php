@@ -86,6 +86,17 @@ class BD_Controllers extends KT_Controllers {
                     ),
                 'date' => '07.05'
                 ),
+            'open-community' => array(
+                'title' => array(
+                    'en' => 'Open community agreement',
+                    'bg' => 'Договор Отворено общество'
+                    ),
+                'content'  => array(
+                    'en' => 'Coming soon',
+                    'bg' => 'Очаквайте скоро'
+                    ),
+                'date' => '04.11'
+                ),
             'pressconference' => array(
                 'title' => array(
                     'en' => 'At a press conference in the town of Kyustendil was presented project PORIV',
@@ -95,30 +106,19 @@ class BD_Controllers extends KT_Controllers {
                     'en' => 'Coming soon',
                     'bg' => 'Очаквайте скоро'
                     ),
-                'date' => '12.08'
+                'date' => '15.01'
                 ),
-            'project-launched2' => array(
-                'title' => array(
-                    'en' => 'The PORIV project is launched',
-                    'bg' => 'Стартира изпълнението на проект ПОРИВ'
-                    ),
-                'content'  => array(
-                    'en' => 'Coming soon',
-                    'bg' => 'Очаквайте скоро'
-                    ),
-                'date' => '19.04'
-                ),
-            'new-routes' => array(
-                'title' => array(
-                    'en' => 'The creation of new routes started on Tuesday at 12.00 p.m.',
-                    'bg' => 'Създаването на нови маршрути започна във вторник в 12.00 ч.'
-                    ),
-                'content'  => array(
-                    'en' => 'Coming soon',
-                    'bg' => 'Очаквайте скоро'
-                    ),
-                'date' => '31.12'
-                ),
+            // 'new-routes' => array(
+            //     'title' => array(
+            //         'en' => 'The creation of new routes started on Tuesday at 12.00 p.m.',
+            //         'bg' => 'Създаването на нови маршрути започна във вторник в 12.00 ч.'
+            //         ),
+            //     'content'  => array(
+            //         'en' => 'Coming soon',
+            //         'bg' => 'Очаквайте скоро'
+            //         ),
+            //     'date' => '31.12'
+            //     ),
             );
 
 
