@@ -40,6 +40,10 @@
     vertical-align: middle;
   }
 
+  .mvab {
+    vertical-align: bottom;
+  }
+
   @for $i from 1 through 5 {
     .mmb#{$i} {
       margin-bottom: 10px*$i;

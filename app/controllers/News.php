@@ -13,10 +13,6 @@ class News extends BD_Controllers {
 
   public function index($news = null) {
 
-    if($news === 'null')
-    {
-      echo 'asd';
-    }
     $pageTitle = array(
       'bg' => 'ПОРИВ - Новини',
       'en' => 'PORIV - News');
@@ -32,6 +28,14 @@ class News extends BD_Controllers {
     $this->viewData['pageTitle'] = $pageTitle;
     $this->viewData['temptext'] = $temptext;
     $this->viewData['title'] = $title;
+
+    if(!empty($this->viewData['news'][$news])) {
+      $this->viewData['newsid'] = $news;
+      $this->viewData['page'] = 'news-individual';
+      $this->view->show('main', $this->viewData);
+      exit;
+    }
+
     $this->view->show('main', $this->viewData);
 
   }
