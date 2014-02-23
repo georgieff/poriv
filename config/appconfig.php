@@ -13,7 +13,7 @@ if (!defined('BASEURL')) {
  *          $config['base_url'] = 'http://www.example.com/'; <<<
  */
 $config['base_url'] = 'http://www.poriv.eu/';
-$config['base_url'] = 'http://localhost/poriv/';
+// $config['base_url'] = 'http://localhost/poriv/';
 
 /* Change default_controller
  * Default controller is used to be loaded if another is not specified in the
@@ -38,7 +38,7 @@ $config['charset'] = 'UTF-8';
  *          (UD comes from UserDefined)
  * So your class names will be like UD_Controllers for example.
  */
-$config['subclass_prefix'] = 'UD_';
+$config['subclass_prefix'] = 'BD_';
 
 /* Allowed URL Characters
  * This lets you specify with a regular expression which characters are permitted

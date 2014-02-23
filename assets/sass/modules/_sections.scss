@@ -84,6 +84,11 @@ $bg-section-height: 600px;
   }
 }
 
+.NewsBlock-big {
+  @extend .NewsBlock;
+  height: 370px;
+}
+
 .NewsBlockInfo {
   position: absolute;
   bottom: 0;

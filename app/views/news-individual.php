@@ -12,8 +12,8 @@
             <h1><?= $title[$lang] ?></h1>
           </div>
           <div class="col8">
-            <a href="<?=baseURL();?>assets/img/<?=$newsid;?>.png" data-lightbox="gallery">
-              <img src="<?=baseURL();?>assets/img/<?=$newsid;?>.png" alt="" >
+            <a href="<?=baseURL();?>assets/img/<?=$newsid;?>.png?c=1" data-lightbox="gallery">
+              <img src="<?=baseURL();?>assets/img/<?=$newsid;?>.png?c=1" alt="" >
             </a>
             <div class="NewsBlockInfo">
               <span class="Number mmb1 mmt5"><?= $news[$newsid]['date'] ?></span>

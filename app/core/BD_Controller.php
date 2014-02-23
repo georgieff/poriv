@@ -13,7 +13,6 @@ class BD_Controllers extends KT_Controllers {
     public function __construct() {
         parent::__construct();
 
-            // $this->input->setCookie('langs', null, time()+3600*24);
         if(!$this->session->get('langs')) {
             $this->session->set('langs', 'bg');
         }

@@ -471,17 +471,21 @@ textarea {
   text-transform: uppercase;
 }
 
-.NewsBlock {
+.NewsBlock, .NewsBlock-big {
   position: relative;
   height: 155px;
   margin-bottom: 24px;
 }
-.NewsBlock > hr {
+.NewsBlock > hr, .NewsBlock-big > hr {
   position: absolute;
   left: 20px;
   right: 20px;
   width: auto;
   bottom: -20px;
+}
+
+.NewsBlock-big {
+  height: 370px;
 }
 
 .NewsBlockInfo {

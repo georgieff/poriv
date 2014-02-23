@@ -6,7 +6,7 @@ class News extends BD_Controllers {
     parent::__construct();
 
     $this->viewData = array_merge($this->viewData, array(
-      'page' => 'news'
+      'page' => 'news-all'
       ));
 
   }
@@ -36,6 +36,7 @@ class News extends BD_Controllers {
       exit;
     }
 
+    $this->load->helper("text");
     $this->view->show('main', $this->viewData);
 
   }
