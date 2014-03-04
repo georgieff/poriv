@@ -78,7 +78,7 @@ blockquote {
 }
 
 a {
-  font: 700 17px/1 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  font: 700 17px/1 "Roboto", Arial, Helvetica, sans-serif;
   color: red;
   text-decoration: none;
   transition: color 0.2s ease, opacity 0.2s ease;
@@ -179,39 +179,41 @@ dd {
 
 h1, .h1 {
   margin: 0 0 25px;
-  font: 300 48px/1 "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
+  font: 300 48px/1 "Roboto Slab", "Myriad Pro", Arial, Helvetica, serif;
+  letter-spacing: -2px;
   color: #000;
 }
 h1.large, .h1.large {
   margin: 0 0 170px;
   font-size: 66px;
+  letter-spacing: -3px;
   line-height: 0.9em;
 }
 
 h2, .h2, .Number {
   margin: 0 0 40px;
-  font: 500 36px/0.91 "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
+  font: 500 36px/0.91 "Roboto Slab", "Myriad Pro", Arial, Helvetica, serif;
 }
 
 h3, .h3, .SubTitle {
   margin: 0 0 25px;
-  font: 300 27px/1.2 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  font: 300 27px/1.2 "Roboto", Arial, Helvetica, sans-serif;
   color: #555;
 }
 
 h4, .h4 {
   margin: 0 0 20px;
-  font: 300 24px "Roboto Slab", "Myriad Pro", "Segoe UI", Arial, Helvetica, serif;
+  font: 300 24px "Roboto Slab", "Myriad Pro", Arial, Helvetica, serif;
 }
 
 h5, .h5 {
   margin: 0 0 30px;
-  font: 700 17px "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  font: 700 17px "Roboto", Arial, Helvetica, sans-serif;
 }
 
 h6, .h6 {
   margin: 0 0 20px;
-  font: 700 17px/1 "Roboto", "Segoe UI", Arial, Helvetica, sans-serif;
+  font: 700 17px/1 "Roboto", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -471,12 +473,12 @@ textarea {
   text-transform: uppercase;
 }
 
-.NewsBlock, .NewsBlock-big {
+.NewsBlock, .NewsBlock-big, .ContactBlock {
   position: relative;
   height: 155px;
   margin-bottom: 24px;
 }
-.NewsBlock > hr, .NewsBlock-big > hr {
+.NewsBlock > hr, .NewsBlock-big > hr, .ContactBlock > hr {
   position: absolute;
   left: 20px;
   right: 20px;
@@ -485,17 +487,43 @@ textarea {
 }
 
 .NewsBlock-big {
-  height: 370px;
+  height: 320px;
+}
+.NewsBlock-big a.h5 {
+  margin-bottom: 3px;
 }
 
 .NewsBlockInfo {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: -320px;
   width: 320px;
 }
 .NewsBlockInfo > h3 {
   margin-bottom: 0;
+}
+
+.ContactBlock {
+  position: relative;
+  height: 340px;
+  margin-bottom: -4px;
+}
+.ContactBlock .type {
+  padding: 25px 10px 10px 10px;
+  color: #000;
+  background: #e7e7e7;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+.ContactBlock .info {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 25px;
+}
+.ContactBlock .info span {
+  margin-bottom: 5px;
 }
 
 .Nav {
@@ -513,6 +541,7 @@ textarea {
   display: inline-block;
   padding: 15px;
   line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #999;
 }
@@ -562,7 +591,7 @@ a.h5 {
   font-size: 12px;
 }
 
-.Phone {
+.Phone, .ContactBlock .info span {
   color: #999;
   font-weight: 700;
 }

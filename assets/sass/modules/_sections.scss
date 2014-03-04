@@ -86,17 +86,49 @@ $bg-section-height: 600px;
 
 .NewsBlock-big {
   @extend .NewsBlock;
-  height: 370px;
+  height: 320px;
+
+  a.h5 {
+    margin-bottom: 3px;
+  }
 }
 
 .NewsBlockInfo {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: -320px;
   width: 320px;
 
   > h3 {
     margin-bottom: 0;
+  }
+}
+
+.ContactBlock {
+  @extend .NewsBlock;
+  position: relative;
+  height: 340px;
+  margin-bottom: -4px;
+
+  .type {
+    padding: 25px 10px 10px 10px;
+    color: #000;
+    background: #e7e7e7;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .info {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 25px;
+
+    span {
+      @extend .Phone;
+      margin-bottom: 5px;
+    }
   }
 }
 
